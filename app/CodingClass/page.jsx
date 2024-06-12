@@ -57,7 +57,7 @@ function page() {
             </script>
             {!start && <Button onClick={() => { setStart(true) }} className='bg-opacity-0 bg-purple-700 border-none text-white font-bold x h-20  w-40 rounded-3xl'>Join Class</Button>}
             {start && <div className='h-screen gap-4 hidescroll  absolute z-[50] overflow-y-scroll overflow-hidden  top-0 center-col p-20 w-full'>
-                <div className='HEADER relative fadeInZoom mt-72  h-fit w-full'>
+                <div className='HEADER relative fadeIn mt-72  h-fit w-full'>
                     <div className='relative'>
                         <p className='bg-green-600 text-sm center text-center rounded-full p-2 h-20 w-20 absolute -top-8 -right-3 trans '>Beginner Friendly</p>
                         <h1 className={`text-3xl font-bold text-center ${inter.className}`}>Summer</h1>
