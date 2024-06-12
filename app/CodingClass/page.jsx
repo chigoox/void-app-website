@@ -57,9 +57,9 @@ function page() {
             </script>
             {!start && <Button onClick={() => { setStart(true) }} className='bg-opacity-0 bg-purple-700 border-none text-white font-bold x h-20  w-40 rounded-3xl'>Join Class</Button>}
             {start && <div className='h-screen gap-4 hidescroll  absolute z-[50] overflow-y-scroll overflow-hidden  top-0 center-col p-20 w-full'>
-                <p className='bg-green-600 text-sm center text-center rounded-full p-2 h-20 w-20 absolute top-20 trans lg:right-[49rem] lg:top-[12rem] right-[1rem]'>Beginner Friendly</p>
                 <div className='HEADER relative fadeInZoom mt-72  h-fit w-full'>
-                    <div className=''>
+                    <div className='relative'>
+                        <p className='bg-green-600 text-sm center text-center rounded-full p-2 h-20 w-20 absolute -top-8 -right-3 trans '>Beginner Friendly</p>
                         <h1 className={`text-3xl font-bold text-center ${inter.className}`}>Summer</h1>
                         <div className="center gap-2">
                             <h1 className={`text-5xl font-extrabold text-center  ${inter.className}`}>Coding</h1>
@@ -70,7 +70,7 @@ function page() {
                 <div className='relative h-full  gap-4 center-col p-4'>
                     <h1 className={`${inter.className} text-white- bg-purple-800 my-2 center w-64 `}>Course List:</h1>
                     <motion.ul
-                        className='COURSELIST container fadeInZoom p-4  center-col gap-4 bg-black bg-opacity-50 rounded-3xl h-auto w-64' variants={container}
+                        className='COURSELIST container  p-4  center-col gap-4 bg-black bg-opacity-50 rounded-3xl h-auto w-64' variants={container}
                         initial="hidden"
                         animate="visible">
                         {['HTML', 'CSS', 'JAVASCRIPT', 'REACT.js'].map(item => (
