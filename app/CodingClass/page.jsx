@@ -56,9 +56,9 @@ function page() {
                 src="https://js.stripe.com/v3/buy-button.js">
             </script>
             {!start && <Button onClick={() => { setStart(true) }} className='bg-opacity-0 bg-purple-700 border-none text-white font-bold x h-20  w-40 rounded-3xl'>Join Class</Button>}
-            {start && <div className='h-auto gap-4   absolute z-[50]  top-0 center-col p-20 w-full'>
-                <p className='bg-green-600 text-sm center text-center rounded-full p-2 h-20 w-20 absolute top-20 right-[3.3rem]'>Beginner Friendly</p>
-                <div className='HEADER relative fadeInZoom  h-fit w-full'>
+            {start && <div className='h-screen gap-4 hidescroll  absolute z-[50] overflow-y-scroll  top-0 center-col p-20 w-full'>
+                <p className='bg-green-600 text-sm center text-center rounded-full p-2 h-20 w-20 absolute top-20 right-[1rem]'>Beginner Friendly</p>
+                <div className='HEADER relative fadeInZoom mt-72  h-fit w-full'>
                     <div className=''>
                         <h1 className={`text-3xl font-bold text-center ${inter.className}`}>Summer</h1>
                         <div className="center gap-2">
