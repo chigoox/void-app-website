@@ -37,7 +37,7 @@ const keyTakeaways = [
 
 
 function page() {
-    const [start, setStart] = useState(true)
+    const [start, setStart] = useState(false)
 
     function BuyButtonComponent() {
         return (
